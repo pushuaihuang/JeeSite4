@@ -6,7 +6,7 @@ VOLUME /tmp
 VOLUME /data
 
 WORKDIR /app
-ADD ./maven/web.war ./app.war
+ADD web.war ./app.war
 
 RUN jar -xvf app.war
 #RUN chmod -R 755 ./*
